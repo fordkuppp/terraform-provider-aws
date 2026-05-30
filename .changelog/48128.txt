@@ -1,0 +1,7 @@
+```release-note:enhancement
+resource/aws_ecs_service: Add `target_type` and `timeout_configuration` arguments to the `deployment_configuration.lifecycle_hook` configuration block, and make `hook_target_arn` and `role_arn` optional, to support `PAUSE` deployment lifecycle hooks
+```
+
+```release-note:enhancement
+data-source/aws_ecs_service: Add `target_type` and `timeout_configuration` attributes to the `deployment_configuration.lifecycle_hook` block
+```
