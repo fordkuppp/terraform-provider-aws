@@ -122,6 +122,15 @@ The `lifecycle_hook` block exports the following attributes:
 * `hook_target_arn` - ARN of the Lambda function to invoke
 * `lifecycle_stages` - Deployment stages when hook is invoked
 * `role_arn` - ARN of the IAM role for invoking the hook
+* `target_type` - Type of action the lifecycle hook performs (`AWS_LAMBDA` or `PAUSE`)
+* `timeout_configuration` - Timeout configuration for the lifecycle hook. See [`timeout_configuration` Block](#timeout_configuration-block) for details.
+
+### `timeout_configuration` Block
+
+The `timeout_configuration` block exports the following attributes:
+
+* `action` - Action Amazon ECS takes when the lifecycle hook times out
+* `timeout_in_minutes` - Number of minutes Amazon ECS waits before taking the timeout action
 
 ### `deployment_controller` Block
 
